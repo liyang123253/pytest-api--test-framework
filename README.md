@@ -22,20 +22,22 @@
 - 日志：logging
 
 ## 项目目录结构
+```plaintext
 auto_api_test/
-├── run.py # 项目启动入口，执行用例 + 生成 allure 报告
-├── pytest.ini # pytest 全局配置、日志配置
+├── run.py                     # 项目启动入口，执行用例 + 生成 Allure 报告
+├── pytest.ini                 # pytest 全局配置、日志配置
 ├── config/
-│ └── config.py # 全局配置：域名、数据库、用例文件路径
+│   └── config.py              # 全局配置：域名、数据库、用例文件路径
 ├── utils/
-│ ├── excel_utils.py # Excel 用例读取工具
-│ ├── analyse_case.py # 用例参数解析工具
-│ ├── send_request.py # http 请求、mysql 连接封装
-│ ├── asserts.py # 通用断言封装（接口 / 数据库）
-│ ├── allure_utils.py # allure 报告标签、标题封装
-│ └── extractor.py # 数据提取工具（响应 /sql 提取）
+│   ├── excel_utils.py         # Excel 用例读取工具
+│   ├── analyse_case.py        # 用例参数解析工具
+│   ├── send_request.py        # HTTP 请求、mysql 连接封装
+│   ├── asserts.py             # 通用断言封装（接口 / 数据库）
+│   ├── allure_utils.py        # allure 报告标签、标题封装
+│   └── extractor.py           # 数据提取工具（响应 /sql 提取）
 ├── testcases/
-│ └── test_runner.py # 测试执行主逻辑，参数化执行所有用例
-├── data/ # 存放 Excel 测试用例文件
-├── logs/ # 自动生成运行日志
-└── report/ # allure 原始数据与最终 html 报告
+│   └── test_runner.py         # 测试执行主逻辑，参数化执行所有用例
+├── test_data/                 # 存放 Excel 测试用例文件
+├── logs/                      # 自动生成运行日志
+└── report/                    # allure 原始数据与最终 html 报告
+```
