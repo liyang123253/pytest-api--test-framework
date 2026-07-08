@@ -36,6 +36,6 @@ auto_api_test/
 │ └── extractor.py # 数据提取工具（响应 /sql 提取）
 ├── testcases/
 │ └── test_runner.py # 测试执行主逻辑，参数化执行所有用例
-├── test_data/ # 存放 Excel 测试用例文件
+├── data/ # 存放 Excel 测试用例文件
 ├── logs/ # 自动生成运行日志
 └── report/ # allure 原始数据与最终 html 报告
