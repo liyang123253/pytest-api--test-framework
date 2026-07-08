@@ -1,4 +1,4 @@
-# Python+Pytest 接口自动化测试框架
+# Pytest + Requests 接口自动化测试框架
 ## 项目简介
 基于 Python + Pytest 搭建的数据驱动接口自动化测试框架，通过 Excel 管理全部测试用例，支持 HTTP 接口请求、接口间数据传递、MySQL 数据库校验，集成 Allure 生成可视化测试报告，低代码维护用例，开箱即用。
 
